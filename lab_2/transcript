@@ -1,0 +1,28 @@
+# Compile of testbench.sv was successful.
+# Compile of fulladder.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.testbench -voptargs=+acc
+# vsim work.testbench -voptargs="+acc" 
+# Start time: 15:50:22 on Sep 10,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.testbench(fast)
+# Loading work.fulladder(fast)
+add wave  \
+sim:/testbench/clk \
+sim:/testbench/reset \
+sim:/testbench/a \
+sim:/testbench/b \
+sim:/testbench/cin \
+sim:/testbench/s \
+sim:/testbench/cout \
+sim:/testbench/sexpected \
+sim:/testbench/coutexpected \
+sim:/testbench/vectornum \
+sim:/testbench/errors \
+sim:/testbench/testvectors
+run 200
+#          8 tests completed with          0 errors
+# ** Note: $stop    : C:/Users/gdavis/Desktop/E85 Lab 2 - Gdavis/testbench.sv(119)
+#    Time: 95 ns  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/gdavis/Desktop/E85 Lab 2 - Gdavis/testbench.sv line 119

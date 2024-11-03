@@ -1,0 +1,76 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/intelFPGA_lite/23.1std
+T_opt
+!s110 1726007845
+VDd2:D7cn]T8en<eZo`LQY2
+04 9 4 work testbench fast 0
+=1-c45ab1e412a7-66e0ca25-24c-1b88
+R0
+!s12b OEM100
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+R1
+vfulladder
+2C:/Users/gdavis/Desktop/E85 Lab 2 - Gdavis/fulladder.sv
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1726008589
+!i10b 1
+!s100 RE>cgl9FN2f05<XIh3a@V3
+I]=ZNVJ;A0;WkzK9UUlon<2
+S1
+Z4 dC:/Users/gdavis/Desktop/E85 Lab 2 - Gdavis
+w1726005192
+8C:/Users/gdavis/Desktop/E85 Lab 2 - Gdavis/fulladder.sv
+FC:/Users/gdavis/Desktop/E85 Lab 2 - Gdavis/fulladder.sv
+!i122 3
+L0 8 25
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2023.3;77
+r1
+!s85 0
+31
+!s108 1726008589.000000
+!s107 C:/Users/gdavis/Desktop/E85 Lab 2 - Gdavis/fulladder.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/gdavis/Desktop/E85 Lab 2 - Gdavis/fulladder.sv|
+!i113 0
+Z7 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vtestbench
+2C:/Users/gdavis/Desktop/E85 Lab 2 - Gdavis/testbench.sv
+R3
+!s110 1726008588
+!i10b 1
+!s100 AFWJP4PFn8PM?BQK[@jeS1
+ImAX56Rc^Y>5F<XJo`gZoK3
+S1
+R4
+w1726006922
+8C:/Users/gdavis/Desktop/E85 Lab 2 - Gdavis/testbench.sv
+FC:/Users/gdavis/Desktop/E85 Lab 2 - Gdavis/testbench.sv
+!i122 2
+L0 4 125
+R5
+R6
+r1
+!s85 0
+31
+!s108 1726008588.000000
+!s107 C:/Users/gdavis/Desktop/E85 Lab 2 - Gdavis/testbench.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/gdavis/Desktop/E85 Lab 2 - Gdavis/testbench.sv|
+!i113 0
+R7
+R2
