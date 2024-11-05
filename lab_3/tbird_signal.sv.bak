@@ -1,0 +1,55 @@
+module flopr(input logic	clk,
+				 input logic	reset,
+				 input logic [6:0] d,
+				 output logic [6:0] q);
+
+	// asynchoronous reset
+	always_ff@(posedge clk, posedge reset)
+		if (reset) q <= 7'0000001;
+		else		  q <= d;
+endmodule
+		
+module lab3_gd(input logic clk,
+	input logic reset,
+	input logic left, right,
+	output logic la, lb, lc, ra, rb, rc
+	);
+	
+	logic n1, n2, n3, n4, n5
+	
+	flopr f(clk, reset, [6:0] St, [6:0] St_prime)   
+	
+	// state 0
+	nor r1(n1, left, right);
+	or o1(St[0], n1, St_prime[3], St_prime[6]);
+
+	// state 1
+	not no1(n2, right);
+	and a1(St[1], left, no1, St_prime[0]); 
+	
+	// state 2
+	buf b1(St_prime[2], St[2]);
+	
+	// state 3
+	buf b2(St_prime[3], St[3]);
+	
+	// state 4
+	not no2(n5, left);
+	and a2(St[4], no2, right, St_prime[0];
+	
+	// state 5
+	buf b3(St_prime[5], St[5]);
+	
+	// state 6	
+	buf b4(St_prime[6], St[6]);
+	
+	// outputs
+	and a3(la, St_prime[1], St_prime[2], St_prime[3]);
+	and a4(lb, St_prime[2], St_prime[3]);
+	buf b5(lc, Stprime[3]);
+	
+	and a5(ra, St_prime[4], St_prime[5], St_prime[6]);
+	and a6(rb, St_prime[5], St_prime[6]);
+	buf b6(rc, St_prime[6]);
+
+endmodule

@@ -1,0 +1,15 @@
+
+State Machine - |Lab_4_gd|sword:s|state
+Name state.T1 
+state.T0 0 
+state.T1 1 
+
+State Machine - |Lab_4_gd|room:r|state
+Name state.S6 state.S5 state.S4 state.S3 state.S2 state.S1 state.S0 
+state.S0 0 0 0 0 0 0 0 
+state.S1 0 0 0 0 0 1 1 
+state.S2 0 0 0 0 1 0 1 
+state.S3 0 0 0 1 0 0 1 
+state.S4 0 0 1 0 0 0 1 
+state.S5 0 1 0 0 0 0 1 
+state.S6 1 0 0 0 0 0 1 

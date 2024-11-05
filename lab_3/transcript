@@ -1,0 +1,537 @@
+# Compile of tbird_signal.sv failed with 1 errors.
+# Compile of testbench.sv was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of tbird_signal.sv was successful.
+# Compile of testbench.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.tbird_signal -voptargs=+acc
+# vsim work.tbird_signal -voptargs="+acc" 
+# Start time: 22:22:26 on Sep 18,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tbird_signal(fast)
+# Loading work.flopr(fast)
+add wave  \
+sim:/tbird_signal/clk \
+sim:/tbird_signal/reset \
+sim:/tbird_signal/left \
+sim:/tbird_signal/right \
+sim:/tbird_signal/la \
+sim:/tbird_signal/lb \
+sim:/tbird_signal/lc \
+sim:/tbird_signal/ra \
+sim:/tbird_signal/rb \
+sim:/tbird_signal/rc \
+sim:/tbird_signal/St \
+sim:/tbird_signal/St_prime \
+sim:/tbird_signal/n1 \
+sim:/tbird_signal/n2 \
+sim:/tbird_signal/n3
+run 200
+# Compile of tbird_signal.sv was successful.
+# Compile of testbench.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tbird_signal
+# End time: 22:27:11 on Sep 18,2024, Elapsed time: 0:04:45
+# Errors: 0, Warnings: 9
+# vsim -voptargs="+acc" work.tbird_signal 
+# Start time: 22:27:11 on Sep 18,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.tbird_signal(fast)
+# Loading work.flopr(fast)
+add wave -position end  sim:/tbird_signal/clk
+add wave -position end  sim:/tbird_signal/reset
+add wave -position end  sim:/tbird_signal/left
+add wave -position end  sim:/tbird_signal/right
+add wave -position end  sim:/tbird_signal/la
+add wave -position end  sim:/tbird_signal/lb
+add wave -position end  sim:/tbird_signal/lc
+add wave -position end  sim:/tbird_signal/ra
+add wave -position end  sim:/tbird_signal/rb
+add wave -position end  sim:/tbird_signal/rc
+add wave -position end  sim:/tbird_signal/St
+add wave -position end  sim:/tbird_signal/St_prime
+add wave -position end  sim:/tbird_signal/n1
+add wave -position end  sim:/tbird_signal/n2
+add wave -position end  sim:/tbird_signal/n3
+run 200
+# Compile of tbird_signal.sv was successful.
+# Compile of testbench.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tbird_signal
+# End time: 22:31:00 on Sep 18,2024, Elapsed time: 0:03:49
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.tbird_signal 
+# Start time: 22:31:00 on Sep 18,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.tbird_signal(fast)
+# Loading work.flopr(fast)
+vsim -voptargs=+acc work.testbench
+# End time: 22:31:18 on Sep 18,2024, Elapsed time: 0:00:18
+# Errors: 0, Warnings: 1
+# vsim -voptargs="+acc" work.testbench 
+# Start time: 22:31:18 on Sep 18,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench(fast)
+# Loading work.tbird_signal(fast)
+# Loading work.flopr(fast)
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/reset
+add wave -position end  sim:/testbench/left
+add wave -position end  sim:/testbench/right
+add wave -position end  sim:/testbench/la
+add wave -position end  sim:/testbench/lb
+add wave -position end  sim:/testbench/lc
+add wave -position end  sim:/testbench/ra
+add wave -position end  sim:/testbench/rb
+add wave -position end  sim:/testbench/rc
+add wave -position end  sim:/testbench/expected
+add wave -position end  sim:/testbench/vectornum
+add wave -position end  sim:/testbench/errors
+add wave -position end  sim:/testbench/testvectors
+run 200
+# Error: inputs = 10
+#  outputs = 0 x x 0 x x (000000 expected)
+# Error: inputs = 10
+#  outputs = x x x 0 x x (100000 expected)
+# Error: inputs = 10
+#  outputs = x x x 0 x x (110000 expected)
+# Error: inputs = 10
+#  outputs = x x x 0 x x (111000 expected)
+# Error: inputs = 10
+#  outputs = x x x 0 x x (000000 expected)
+# Error: inputs = 10
+#  outputs = x x x 0 x x (100000 expected)
+# Error: inputs = 00
+#  outputs = x x x 0 x x (110000 expected)
+# Error: inputs = 01
+#  outputs = 0 x x 0 x x (111000 expected)
+# Error: inputs = 01
+#  outputs = 0 x x x x x (000000 expected)
+# Error: inputs = 01
+#  outputs = 0 x x x x x (000100 expected)
+# Error: inputs = 00
+#  outputs = 0 x x x x x (000110 expected)
+# Error: inputs = 00
+#  outputs = 0 x x 0 x x (000111 expected)
+# Error: inputs = 00
+#  outputs = 0 x x 0 x x (000000 expected)
+#         14 tests completed with         13 errors
+# ** Note: $stop    : C:/Users/gdavis/Documents/lab3/testbench.sv(37)
+#    Time: 155 ns  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/gdavis/Documents/lab3/testbench.sv line 37
+# Compile of tbird_signal.sv was successful.
+# Compile of testbench.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of tbird_signal.sv was successful.
+# Compile of testbench.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.testbench
+# End time: 22:32:37 on Sep 18,2024, Elapsed time: 0:01:19
+# Errors: 0, Warnings: 4
+# vsim -voptargs="+acc" work.testbench 
+# Start time: 22:32:37 on Sep 18,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading sv_std.std
+# Loading work.testbench(fast)
+# Loading work.tbird_signal(fast)
+# Loading work.flopr(fast)
+run 200
+# Error: inputs = 10
+#  outputs = 0 x x 0 x x (000000 expected)
+# Error: inputs = 10
+#  outputs = x x x 0 x x (100000 expected)
+# Error: inputs = 10
+#  outputs = x x x 0 x x (110000 expected)
+# Error: inputs = 10
+#  outputs = x x x 0 x x (111000 expected)
+# Error: inputs = 10
+#  outputs = x x x 0 x x (000000 expected)
+# Error: inputs = 10
+#  outputs = x x x 0 x x (100000 expected)
+# Error: inputs = 00
+#  outputs = x x x 0 x x (110000 expected)
+# Error: inputs = 01
+#  outputs = 0 x x 0 x x (111000 expected)
+# Error: inputs = 01
+#  outputs = 0 x x x x x (000000 expected)
+# Error: inputs = 01
+#  outputs = 0 x x x x x (000100 expected)
+# Error: inputs = 00
+#  outputs = 0 x x x x x (000110 expected)
+# Error: inputs = 00
+#  outputs = 0 x x 0 x x (000111 expected)
+# Error: inputs = 00
+#  outputs = 0 x x 0 x x (000000 expected)
+#         14 tests completed with         13 errors
+# ** Note: $stop    : C:/Users/gdavis/Documents/lab3/testbench.sv(37)
+#    Time: 155 ns  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/gdavis/Documents/lab3/testbench.sv line 37
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/reset
+add wave -position end  sim:/testbench/left
+add wave -position end  sim:/testbench/right
+add wave -position end  sim:/testbench/la
+add wave -position end  sim:/testbench/lb
+add wave -position end  sim:/testbench/lc
+add wave -position end  sim:/testbench/ra
+add wave -position end  sim:/testbench/rb
+add wave -position end  sim:/testbench/rc
+add wave -position end  sim:/testbench/expected
+add wave -position end  sim:/testbench/vectornum
+add wave -position end  sim:/testbench/errors
+add wave -position end  sim:/testbench/testvectors
+run 200
+# Error: inputs = xx
+#  outputs = 0 x x 0 x x (xxxxxx expected)
+#         15 tests completed with         14 errors
+# ** Note: $stop    : C:/Users/gdavis/Documents/lab3/testbench.sv(37)
+#    Time: 165 ns  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/gdavis/Documents/lab3/testbench.sv line 37
+run 200
+#         16 tests completed with         14 errors
+# ** Note: $stop    : C:/Users/gdavis/Documents/lab3/testbench.sv(37)
+#    Time: 175 ns  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/gdavis/Documents/lab3/testbench.sv line 37
+# Compile of tbird_signal.sv was successful.
+# Compile of testbench.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.testbench
+# End time: 22:39:10 on Sep 18,2024, Elapsed time: 0:06:33
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.testbench 
+# Start time: 22:39:10 on Sep 18,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench(fast)
+# Loading work.tbird_signal(fast)
+# Loading work.flopr(fast)
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/reset
+add wave -position end  sim:/testbench/left
+add wave -position end  sim:/testbench/right
+add wave -position end  sim:/testbench/la
+add wave -position end  sim:/testbench/lb
+add wave -position end  sim:/testbench/lc
+add wave -position end  sim:/testbench/ra
+add wave -position end  sim:/testbench/rb
+add wave -position end  sim:/testbench/rc
+add wave -position end  sim:/testbench/expected
+add wave -position end  sim:/testbench/vectornum
+add wave -position end  sim:/testbench/errors
+add wave -position end  sim:/testbench/testvectors
+run 200
+# Error: inputs = 10
+#  outputs = 0 x x 0 x x (000000 expected)
+# Error: inputs = 10
+#  outputs = x x x 0 x x (100000 expected)
+# Error: inputs = 10
+#  outputs = x x x 0 x x (110000 expected)
+# Error: inputs = 10
+#  outputs = x x x 0 x x (111000 expected)
+# Error: inputs = 10
+#  outputs = x x x 0 x x (000000 expected)
+# Error: inputs = 10
+#  outputs = x x x 0 x x (100000 expected)
+# Error: inputs = 00
+#  outputs = x x x 0 x x (110000 expected)
+# Error: inputs = 01
+#  outputs = 0 x x 0 x x (111000 expected)
+# Error: inputs = 01
+#  outputs = 0 x x x x x (000000 expected)
+# Error: inputs = 01
+#  outputs = 0 x x x x x (000100 expected)
+# Error: inputs = 00
+#  outputs = 0 x x x x x (000110 expected)
+# Error: inputs = 00
+#  outputs = 0 x x 0 x x (000111 expected)
+# Error: inputs = 00
+#  outputs = 0 x x 0 x x (000000 expected)
+#         14 tests completed with         13 errors
+# ** Note: $stop    : C:/Users/gdavis/Documents/lab3/testbench.sv(37)
+#    Time: 155 ns  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/gdavis/Documents/lab3/testbench.sv line 37
+# Compile of tbird_signal.sv was successful.
+# Compile of testbench.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.testbench
+# End time: 22:39:48 on Sep 18,2024, Elapsed time: 0:00:38
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" work.testbench 
+# Start time: 22:39:48 on Sep 18,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading sv_std.std
+# Loading work.testbench(fast)
+# Loading work.tbird_signal(fast)
+# Loading work.flopr(fast)
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/reset
+add wave -position end  sim:/testbench/left
+add wave -position end  sim:/testbench/right
+add wave -position end  sim:/testbench/la
+add wave -position end  sim:/testbench/lb
+add wave -position end  sim:/testbench/lc
+add wave -position end  sim:/testbench/ra
+add wave -position end  sim:/testbench/rb
+add wave -position end  sim:/testbench/rc
+add wave -position end  sim:/testbench/expected
+add wave -position end  sim:/testbench/vectornum
+add wave -position end  sim:/testbench/errors
+add wave -position end  sim:/testbench/testvectors
+RUN 200
+# invalid command name "RUN"
+run 200
+# Error: inputs = 10
+#  outputs = 0 x x 0 x x (000000 expected)
+# Error: inputs = 10
+#  outputs = x x x 0 x x (100000 expected)
+# Error: inputs = 10
+#  outputs = x x x 0 x x (110000 expected)
+# Error: inputs = 10
+#  outputs = x x x 0 x x (111000 expected)
+# Error: inputs = 10
+#  outputs = x x x 0 x x (000000 expected)
+# Error: inputs = 10
+#  outputs = x x x 0 x x (100000 expected)
+# Error: inputs = 00
+#  outputs = x x x 0 x x (110000 expected)
+# Error: inputs = 01
+#  outputs = 0 x x 0 x x (111000 expected)
+# Error: inputs = 01
+#  outputs = 0 x x x x x (000000 expected)
+# Error: inputs = 01
+#  outputs = 0 x x x x x (000100 expected)
+# Error: inputs = 00
+#  outputs = 0 x x x x x (000110 expected)
+# Error: inputs = 00
+#  outputs = 0 x x 0 x x (000111 expected)
+# Error: inputs = 00
+#  outputs = 0 x x 0 x x (000000 expected)
+#         14 tests completed with         13 errors
+# ** Note: $stop    : C:/Users/gdavis/Documents/lab3/testbench.sv(37)
+#    Time: 155 ns  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/gdavis/Documents/lab3/testbench.sv line 37
+# Compile of tbird_signal.sv was successful.
+# Compile of testbench.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.testbench
+# End time: 22:45:54 on Sep 18,2024, Elapsed time: 0:06:06
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.testbench 
+# Start time: 22:45:54 on Sep 18,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench(fast)
+# Loading work.tbird_signal(fast)
+# Loading work.flopr(fast)
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/reset
+add wave -position end  sim:/testbench/left
+add wave -position end  sim:/testbench/right
+add wave -position end  sim:/testbench/la
+add wave -position end  sim:/testbench/lb
+add wave -position end  sim:/testbench/lc
+add wave -position end  sim:/testbench/ra
+add wave -position end  sim:/testbench/rb
+add wave -position end  sim:/testbench/rc
+add wave -position end  sim:/testbench/expected
+add wave -position end  sim:/testbench/vectornum
+add wave -position end  sim:/testbench/errors
+add wave -position end  sim:/testbench/testvectors
+run 200
+# Error: inputs = 10
+#  outputs = 0 x x 0 x x (000000 expected)
+# Error: inputs = 10
+#  outputs = x x x 0 x x (100000 expected)
+# Error: inputs = 10
+#  outputs = x x x 0 x x (110000 expected)
+# Error: inputs = 10
+#  outputs = x x x 0 x x (111000 expected)
+# Error: inputs = 10
+#  outputs = x x x 0 x x (000000 expected)
+# Error: inputs = 10
+#  outputs = x x x 0 x x (100000 expected)
+# Error: inputs = 00
+#  outputs = x x x 0 x x (110000 expected)
+# Error: inputs = 01
+#  outputs = 0 x x 0 x x (111000 expected)
+# Error: inputs = 01
+#  outputs = 0 x x x x x (000000 expected)
+# Error: inputs = 01
+#  outputs = 0 x x x x x (000100 expected)
+# Error: inputs = 00
+#  outputs = 0 x x x x x (000110 expected)
+# Error: inputs = 00
+#  outputs = 0 x x 0 x x (000111 expected)
+# Error: inputs = 00
+#  outputs = 0 x x 0 x x (000000 expected)
+#         14 tests completed with         13 errors
+# ** Note: $stop    : C:/Users/gdavis/Documents/lab3/testbench.sv(37)
+#    Time: 155 ns  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/gdavis/Documents/lab3/testbench.sv line 37
+# Compile of tbird_signal.sv was successful.
+# Compile of testbench.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.testbench
+# End time: 22:47:07 on Sep 18,2024, Elapsed time: 0:01:13
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" work.testbench 
+# Start time: 22:47:07 on Sep 18,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench(fast)
+# Loading work.tbird_signal(fast)
+# Loading work.flopr(fast)
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/reset
+add wave -position end  sim:/testbench/left
+add wave -position end  sim:/testbench/right
+add wave -position end  sim:/testbench/la
+add wave -position end  sim:/testbench/lb
+add wave -position end  sim:/testbench/lc
+add wave -position end  sim:/testbench/ra
+add wave -position end  sim:/testbench/rb
+add wave -position end  sim:/testbench/rc
+add wave -position end  sim:/testbench/expected
+add wave -position end  sim:/testbench/vectornum
+add wave -position end  sim:/testbench/errors
+add wave -position end  sim:/testbench/testvectors
+run 200
+# Error: inputs = 10
+#  outputs = x x x x x x (000000 expected)
+# Error: inputs = 10
+#  outputs = 1 x x x x x (100000 expected)
+# Error: inputs = 10
+#  outputs = x x x x x x (110000 expected)
+# Error: inputs = 10
+#  outputs = x x x x x x (111000 expected)
+# Error: inputs = 10
+#  outputs = x x x x x x (000000 expected)
+# Error: inputs = 10
+#  outputs = x x x x x x (100000 expected)
+# Error: inputs = 00
+#  outputs = x x x x x x (110000 expected)
+# Error: inputs = 01
+#  outputs = x x x x x x (111000 expected)
+# Error: inputs = 01
+#  outputs = x x x x x x (000000 expected)
+# Error: inputs = 01
+#  outputs = x x x x x x (000100 expected)
+# Error: inputs = 00
+#  outputs = x x x x x x (000110 expected)
+# Error: inputs = 00
+#  outputs = x x x x x x (000111 expected)
+# Error: inputs = 00
+#  outputs = x x x x x x (000000 expected)
+#         14 tests completed with         13 errors
+# ** Note: $stop    : C:/Users/gdavis/Documents/lab3/testbench.sv(37)
+#    Time: 155 ns  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/gdavis/Documents/lab3/testbench.sv line 37
+# Compile of tbird_signal.sv was successful.
+# Compile of testbench.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.testbench
+# End time: 22:49:01 on Sep 18,2024, Elapsed time: 0:01:54
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" work.testbench 
+# Start time: 22:49:01 on Sep 18,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading sv_std.std
+# Loading work.testbench(fast)
+# Loading work.tbird_signal(fast)
+# Loading work.flopr(fast)
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/reset
+add wave -position end  sim:/testbench/left
+add wave -position end  sim:/testbench/right
+add wave -position end  sim:/testbench/la
+add wave -position end  sim:/testbench/lb
+add wave -position end  sim:/testbench/lc
+add wave -position end  sim:/testbench/ra
+add wave -position end  sim:/testbench/rb
+add wave -position end  sim:/testbench/rc
+add wave -position end  sim:/testbench/expected
+add wave -position end  sim:/testbench/vectornum
+add wave -position end  sim:/testbench/errors
+add wave -position end  sim:/testbench/testvectors
+run 200
+# Error: inputs = 10
+#  outputs = x x x x x x (000000 expected)
+# Error: inputs = 10
+#  outputs = 1 x x x x x (100000 expected)
+# Error: inputs = 10
+#  outputs = x x x x x x (110000 expected)
+# Error: inputs = 10
+#  outputs = x x x x x x (111000 expected)
+# Error: inputs = 10
+#  outputs = x x x x x x (000000 expected)
+# Error: inputs = 10
+#  outputs = x x x x x x (100000 expected)
+# Error: inputs = 00
+#  outputs = x x x x x x (110000 expected)
+# Error: inputs = 01
+#  outputs = x x x x x x (111000 expected)
+# Error: inputs = 01
+#  outputs = x x x x x x (000000 expected)
+# Error: inputs = 01
+#  outputs = x x x x x x (000100 expected)
+# Error: inputs = 00
+#  outputs = x x x x x x (000110 expected)
+# Error: inputs = 00
+#  outputs = x x x x x x (000111 expected)
+# Error: inputs = 00
+#  outputs = x x x x x x (000000 expected)
+#         14 tests completed with         13 errors
+# ** Note: $stop    : C:/Users/gdavis/Documents/lab3/testbench.sv(37)
+#    Time: 155 ns  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/gdavis/Documents/lab3/testbench.sv line 37
+# Compile of tbird_signal.sv failed with 3 errors.
+# Compile of testbench.sv was successful.
+# 2 compiles, 1 failed with 3 errors.
+# Compile of tbird_signal.sv was successful.
+# Compile of testbench.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.testbench
+# End time: 22:54:50 on Sep 18,2024, Elapsed time: 0:05:49
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" work.testbench 
+# Start time: 22:54:50 on Sep 18,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench(fast)
+# Loading work.tbird_signal(fast)
+# Loading work.flopr(fast)
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/reset
+add wave -position end  sim:/testbench/left
+add wave -position end  sim:/testbench/right
+add wave -position end  sim:/testbench/la
+add wave -position end  sim:/testbench/lb
+add wave -position end  sim:/testbench/lc
+add wave -position end  sim:/testbench/ra
+add wave -position end  sim:/testbench/rb
+add wave -position end  sim:/testbench/rc
+add wave -position end  sim:/testbench/expected
+add wave -position end  sim:/testbench/vectornum
+add wave -position end  sim:/testbench/errors
+add wave -position end  sim:/testbench/testvectors
+run 200
+#         14 tests completed with          0 errors
+# ** Note: $stop    : C:/Users/gdavis/Documents/lab3/testbench.sv(37)
+#    Time: 155 ns  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/Users/gdavis/Documents/lab3/testbench.sv line 37

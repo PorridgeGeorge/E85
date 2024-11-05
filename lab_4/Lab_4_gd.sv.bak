@@ -1,0 +1,59 @@
+// adventure game
+module adventure(input logic N,S,E,W, Reset
+				     output logic WIN, DIE);
+
+// Room FSM
+module room(input logic N,S,W,E, Reset, CLK
+				output logic );
+	typedef enum logic [1:0] {S0, S1, S2, S3, S4, S5, S6} statetype;
+	statetype state, nextstate;
+	
+	// state register
+	always_ff @(posedge clk, posedge reset)
+		if (reset) state <= S0;
+		else state <= nextstate;
+	
+	// next state logic
+	always_comb
+		case (state)
+			S0:   if (E) nextstate = S1
+					else nextstate = S0
+					
+			S1:   if (W) nextstate = S0;
+				   if (S) nextstate = S2;
+				   else neststate = S1
+					
+			S2:   if (N) nextstate = S1;
+				   if (W) nextstate = S3;
+				   if (E) nextstate = S4;
+				   else nextstate = S2;
+					
+			S3:	if (W) nextstate = S2; // trigger sword B somehow
+					else nextstate = S3
+			
+			S4:	if (E & ~B) nextstate = S6;
+					if (E & B) nextstate = S5;
+					if (W & B) nextstate = S2;
+					else nextstate = S4
+					
+			S5:	if (reset) nextstate = S0;
+					else (
+			S6
+			
+			default: nextstate = S0;
+		endcase
+	
+	// output logic
+	assign 1 
+		
+
+
+// Sword FSM
+module sword(input logic Reset, CLK
+				output logic B
+				
+				
+	always_ff @(posedge clk, posedge reset)
+		if (reset) state <= S0;
+		else state <= nextstate;
+	

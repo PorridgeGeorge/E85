@@ -1,0 +1,123 @@
+m255
+K4
+z2
+Z0 !s12c _opt1
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+!s12c _opt
+R1
+!s11f MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dC:/intelFPGA_lite/23.1std
+T_opt
+!s110 1726723347
+V;AC8<I`hm=0SZ0<:m:O:V3
+04 12 4 work tbird_signal fast 0
+=1-00be43e5ffee-66ebb513-65-24a0
+R1
+Z3 !s12b OEM100
+!s124 OEM10U2 
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+Z5 tCvgOpt 0
+n@_opt
+Z6 OL;O;2023.3;77
+R2
+T_opt1
+!s110 1726725290
+VJ;zX@fe<7R5Dc>La]C4;`2
+04 9 4 work testbench fast 0
+=1-00be43e5ffee-66ebbcaa-29e-1e88
+R1
+R3
+!s124 OEM10U3 
+R4
+R5
+n@_opt1
+R6
+vflopr
+Z7 2C:/Users/gdavis/Documents/lab3/tbird_signal.sv
+Z8 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z9 !s110 1726725281
+!i10b 1
+!s100 Q^KS^^Fh]OMneX_T@_33l0
+IY0f`3]E<37iE0n1=KcY:01
+S1
+Z10 dC:/Users/gdavis/Documents/lab3
+Z11 w1726725273
+Z12 8C:/Users/gdavis/Documents/lab3/tbird_signal.sv
+Z13 FC:/Users/gdavis/Documents/lab3/tbird_signal.sv
+!i122 24
+L0 1 10
+Z14 VDg1SIo80bB@j0V0VzS_@n1
+Z15 OL;L;2023.3;77
+r1
+!s85 0
+31
+Z16 !s108 1726725281.000000
+Z17 !s107 C:/Users/gdavis/Documents/lab3/tbird_signal.sv|
+Z18 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/gdavis/Documents/lab3/tbird_signal.sv|
+!i113 0
+Z19 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
+vtbird_signal
+R7
+R8
+R9
+!i10b 1
+!s100 f1@DPQ==CI9c[i]n;Vkh]0
+Il@Qa_m]ZkUQ[YWa@iIXQ82
+S1
+R10
+R11
+R12
+R13
+!i122 24
+L0 12 40
+R14
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 0
+R19
+R5
+vtestbench
+2C:/Users/gdavis/Documents/lab3/testbench.sv
+R8
+R9
+!i10b 1
+!s100 LCZCCIl?KndRlMHQ[^=8K2
+If0YahLX<S8<cPG4<nF1Mk1
+S1
+R10
+w1726723834
+8C:/Users/gdavis/Documents/lab3/testbench.sv
+FC:/Users/gdavis/Documents/lab3/testbench.sv
+!i122 25
+L0 1 40
+R14
+R15
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/gdavis/Documents/lab3/testbench.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/gdavis/Documents/lab3/testbench.sv|
+!i113 0
+R19
+R5
